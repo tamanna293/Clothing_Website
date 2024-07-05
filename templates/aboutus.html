@@ -1,0 +1,136 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>about</title>
+
+<link rel="stylesheet" href="{% static '/css/aboutus.css' %}">
+</head>
+
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="{% url 'home' %}" id="navbar__logo">
+        <b>GEEYA</b>
+      </a>
+
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="{% url 'home' %}" class="navbar__links" id="home-page">Home</a>
+            
+          
+        </li>
+        <li class="navbar__item">
+          <a href="{% url 'sale' %}" class="navbar__links" id="services-page">Sale</a>
+           
+        </li>
+        <li class="navbar__item">
+          <a href="{% url 'aboutus' %}" class="navbar__links" id="about-page">About</a>
+           
+        </li>
+
+        
+
+        <li class="navbar__btn">
+          <a href="{%url 'contact'%}" class="btn1" id="signup-page">
+            Contact Us
+          </a>
+        </li>
+        <li class="navbar__btn">
+          <a href="{%url 'joinus'%}" class="btn1" id="signup-page">
+            Join Us
+          </a>
+        </li>
+      </ul>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Categories</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="{%url "indian"%}">Indian</a>
+          
+          <a href="{%url "all"%}">All</a>
+          
+        </div>
+        
+      </div>
+    </div>
+  </nav>
+
+  <div class="About-us">
+    <h1> Inside GEEYA BOUTIQUE</h1>
+	
+	<h3>Style-Centered</h3>
+	<hr>
+	<p><b>GEEYA BOUTIQUE</b> was brought into the world at the crossing point of style and innovation. On account of our<br>
+         motivating assortments and our perfect client assistance, we have been profoundly fruitful since the very beginning.  <br>
+         Browse through our site and check out the latest additions to our collection, and feel free to get in touch with our team <br>
+          if you need any assistance.<br>
+         Happy shopping!</p>
+   
+   
+    <h2 style="text-align:center" id="ot">Founder</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card" style="left: 50px;">
+                <img src="{% static '/images/ceo.jpg' %}" alt="preet" style="width:50%">
+                <div class="container" style="align-self: center;">
+                    <h2 class="name">Preet Duggal</h2>
+                    <p class="title">Founder</p>
+                    <p class="desc">Preet Duggal, the Founder of our company has been extremely visionary and creative fashion designer with 10+ years of experience in producing exceptional clothing for any  type of customer. Make new designs for multiple customers by updating with the current fashion trends</p>
+                    <p>
+                        <button class="button">
+                            <a href="https://api.whatsapp.com/send?phone=9823788556&text=Hello%20there" target="_blank" style="color:rgb(255, 255, 255)">
+                                Contact
+                            </a>
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card" style="left: 50px;">
+                <img src="{% static '/images/loc1.jpg' %}" id="img1" alt="preet" style="width:100%">
+                <div class="container" style="align-self: center;">
+                    <a href="https://maps.app.goo.gl/VTid4PsKbbDfkg5M6?g_st=iw"><h2 class="name">location</h2> </a>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card" style="left: 50px;">
+                <img src="{% static '/images/int.jpg' %}" id="img1" alt="preet" style="width:100%">
+                <div class="container" style="align-self: center;">
+                    <a href="https://maps.app.goo.gl/VTid4PsKbbDfkg5M6?g_st=iw"><h2 class="name">location</h2> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <h3> Follow Us On </h3>
+   
+   <a href= "https://instagram.com/geeya_boutique?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr" id="a1" class="fa fa-instagram"> Instagram </a> 
+  </div>
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</body>
+</html>
+

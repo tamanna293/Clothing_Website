@@ -1,0 +1,354 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Indian wear </title>
+    <!-- Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libsfont-awesome/6.0.0-beta3/css/all.min.css"/>
+
+    <link rel="stylesheet" href="{% static '/css/sale.css' %}">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+
+  <body>
+     <!--navbar-->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="{% url 'home' %}" class="navbar__logo1">
+        GEEYA
+      </a>
+      
+
+
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="{% url 'home' %}" class="navbar__links" id="home-page">Home</a>
+            
+        </li>
+        <li class="navbar__item">
+          <a href="{% url 'sale' %}" class="navbar__links" id="services-page">Sale</a>
+           
+        </li>
+        <li class="navbar__item">
+          <a href="{% url 'aboutus' %}" class="navbar__links" id="about-page">About</a>
+            
+        </li>
+
+        <li class="navbar__btn">
+          <a href="{% url 'contact' %}" class="btn1" id="signup-page">Contact Us</a>
+        </li>
+
+      </ul>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Categories</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Indian</a>
+          <a href="#">Western</a>
+          <a href="#">All</a>
+          <a href="#">design urself</a>
+        </div>
+        
+      </div>
+    </div>
+  </nav>
+
+
+      <!--hero-->
+  <div class="hero" id="home">
+    <div class="hero__container">
+      <h1 class="hero__heading">
+         <span>ALL DESIGNS</span>
+      </h1>
+      <p class="hero__description">
+        Discover Your Style
+      </p>
+    </div>
+  </div>
+
+    <section class="content">
+      <!-- row 1 -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="{% static '/images/ind4.jpeg' %}" width="100%">
+            <div class="ch">
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"><h3>Glitter and Shine</h3></a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="{% static '/images/ind5.jpeg' %}" width="100%">
+            <div class="ch">
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> Elegant Night</h3></a>
+            
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="{% static '/images/ind1.jpeg' %}" width="100%">
+            <div class="ch">
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"><h3> Red Like Wine </h3></a>
+            
+          </div>
+        </div>
+        <!-- row 2 -->
+        <div class="column">
+          <div class="card">
+            <img src="{% static '/images/ind2.jpeg' %}" width="100%">
+            <div class="ch">
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> Pakistani kaul </h3> </a>
+           
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="{% static '/images/ind21.jpg' %}" width="100%">
+            <div class="ch">
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3>  Turquoise Beauty </h3> </a>
+            
+          </div>
+        </div>
+        
+        <div class="column">
+            <div class="card">
+              <img src="{% static '/images/ind3.jpeg' %}" width="100%">
+              <div class="ch">
+              </div>
+              <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> Black Barbie </h3> </a>
+              
+            </div>
+          </div>
+      </div> 
+<!-- row 3 -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="{% static '/images/ind7.jpeg' %}" width="100%">
+            <div class="ch">
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> String Mystery</h3> </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="{% static '/images/ind8.jpeg' %}" width="100%">
+            <div class="ch">
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> Pink Passion </h3> </a>
+            
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="{% static '/images/t2.jpeg' %}" width="100%">
+            <div class="ch">
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> Pretty Peach  </h3> </a>
+            
+          </div>
+        </div>
+         <!-- row 4 -->
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="{% static '/images/t3.jpeg' %}" width="100%">
+              <div class="ch">
+              </div>
+              <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> Blue Nightangle </h3> </a>
+            </div>
+          </div>
+         
+  
+          <div class="column">
+            <div class="card">
+              <img src="{% static '/images/g3.jpeg' %}" width="100%">
+              <div class="ch">
+              </div>
+              <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> Barbie Pink </h3> </a>
+              
+            </div>
+          </div>
+  
+          <div class="column">
+            <div class="card">
+              <img src="{% static '/images/t1.jpeg' %}" width="100%">
+              <div class="ch">
+              </div>
+              <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> Punjabi Suit </h3> </a>
+             
+            </div>
+ <!-- row 5 -->
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="{% static '/images/g1.jpeg' %}" width="100%">
+                <div class="ch">
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3>Sunflower Beauty </h3> </a>
+              </div>
+            </div>
+    
+            <div class="column">
+              <div class="card">
+                <img src="{% static '/images/g2.jpeg' %}" width="100%">
+                <div class="ch">
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> Blue Babe </h3> </a>
+                
+              </div>
+            </div>
+    
+            <div class="column">
+              <div class="card">
+                <img src="{% static '/images/f1.jpeg' %}" width="100%">
+                <div class="ch">
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> Traditionally Modern </h3> </a>
+            
+              </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                  <img src="{% static '/images/sale9.jpg' %}" width="100%">
+                  <div class="ch">
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3>Glitter and Shine </h3></a>
+                </div>
+              </div>
+        
+              <div class="column">
+                <div class="card">
+                  <img src="{% static '/images/sale2.jpg' %}" width="100%">
+                  <div class="ch">
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> Elegant Night </h3></a>
+                  
+                </div>
+              </div>
+        
+              <div class="column">
+                <div class="card">
+                  <img src="{% static '/images/sale3.jpg' %}" width="100%">
+                  <div class="ch">
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"><h3> Silver Splat </h3></a>
+                  
+                </div>
+              </div>
+              <!-- row 2 -->
+              <div class="column">
+                <div class="card">
+                  <img src="{% static '/images/sale4.jpg' %}" width="100%">
+                  <div class="ch">
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3>Foxton Flawless Work  </h3></a>
+                 
+                </div>
+              </div>
+        
+              <div class="column">
+                <div class="card">
+                  <img src="{% static '/images/sale5.jpg' %}" width="100%">
+                  <div class="ch">
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> Autumn Red </h3></a>
+                  
+                </div>
+              </div>
+              
+              <div class="column">
+                  <div class="card">
+                      <img src="{% static '/images/sale7.jpg' %}" width="100%">
+                    <div class="ch">
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3>  Forest Radiance</h3></a>
+                    
+                  </div>
+                </div>
+            </div> 
+        <!-- row 3 -->
+            <div class="row">
+              <div class="column">
+                <div class="card">
+                  <img src="{% static '/images/sale6.jpg' %}" width="100%">
+                  <div class="ch">
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> Yellow Shimmer </h3></a>
+                </div>
+              </div>
+        
+              <div class="column">
+                <div class="card">
+                  <img src="{% static '/images/sale8.jpg' %}" width="100%">
+                  <div class="ch">
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> Red Like Wine </h3></a>
+                  
+                </div>
+              </div>
+        
+              <div class="column">
+                <div class="card">
+                  <img src="{% static '/images/sale1.jpg' %}" width="100%">
+                  <div class="ch">
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=9823788556&text=How%20Do%20I%20Order?"> <h3> Golden Grace </h3></a>
+                  
+                </div>
+              </div>
+                      
+                        
+                      </div>
+                    </div>
+               
+    </section>
+
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+  
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+  </body>
+</html>
